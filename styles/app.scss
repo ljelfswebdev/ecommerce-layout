@@ -1,20 +1,30 @@
+@import "functions";
+
 @import "variables/colors";
 @import "variables/typography";
 
+@import "components/navbar.scss";
+
+.body {
+margin: rem-calc(0);
+}
+.container {
+    margin: rem-calc(10)
+}
 .header{
     color: $gold;
     font-family: $primary;
-    font-size: 32px;
+    font-size: rem-calc(32);
 }
 
 .sub-header {
     color: $darkGreen;
     font-family: $secondary;
-    font-size: 20px;
+    font-size: rem-calc(20);
 }
 
 .text {
     color: $lightGreen;
     font-family: $secondary;
-    font-size: 15px;
+    font-size: rem-calc(16);
 }

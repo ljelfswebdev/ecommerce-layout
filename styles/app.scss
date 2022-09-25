@@ -4,9 +4,10 @@
 @import "variables/typography";
 
 @import "components/navbar.scss";
+@import "components/footer.scss";
 
-.body {
-margin: rem-calc(0);
+body {
+margin: 0 !important;
 }
 .container {
     margin: rem-calc(10)
@@ -18,7 +19,7 @@ margin: rem-calc(0);
 }
 
 .sub-header {
-    color: $darkGreen;
+    color: $gold;
     font-family: $secondary;
     font-size: rem-calc(20);
 }

@@ -18,11 +18,11 @@ const Header = () => {
     } 
     return (
         <div>
-            <nav class="top-nav" id="top-nav">
-                <a href="#" class="logo">Company Logo</a>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" htmlFor="menu-btn"><span class="navicon"></span></label>
-                <ul class="menu">
+            <nav className="top-nav" id="top-nav">
+                <a href="#" className="logo">Company Logo</a>
+                <input className="menu-btn" type="checkbox" id="menu-btn" />
+                <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+                <ul className="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>

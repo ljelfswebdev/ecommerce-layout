@@ -8,9 +8,9 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: rem-calc(10);
-    background-color: $darkGreen;
+    background-color: $dark-blue;
     padding:rem-calc(20 5);
-    position: absolute;
+    position: relative;
     bottom:0;
     width:100%;
 
@@ -19,9 +19,10 @@
         display: contents;;
         &-item {
             font-size: rem-calc(20);
-            color: $gold;
+            color: $black;
             font-family: $primary;
             opacity: 0.6;
+            font-weight: 400;
 
             &:hover {
                 opacity:1;
@@ -38,20 +39,20 @@
     @media  (min-width: 768px) {
         display: none;
     }
-    background-color: $darkGreen;
-    position: absolute;
+    background-color: $dark-blue;
+    position: relative;
     bottom:0;
     width:100%;
 
     .accordions {
-        background-color: $darkGreen;
+        background-color: $dark-blue;
         overflow: hidden;
         width:100%;
     }
     
     .accordion {
         width: 100%;
-        color: $gold;
+        color: $black;
         overflow: hidden;
     }
     
@@ -59,7 +60,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0.5em;
-        background-color: $darkGreen;
+        background-color: $dark-blue;
         font-weight: 500;
         cursor: pointer;
     }
@@ -69,7 +70,7 @@
     }
     
     .acc-label:hover {
-        background-color: $lightGreen;
+        background-color: $yellow;
     }
     
     .acc-label::after {
@@ -84,8 +85,8 @@
     .acc-content {
         max-height: 0;
         padding: 0 1em;
-        color: $gold;
-        background-color: $lightGreen;
+        color: $black;
+        background-color: $yellow;
         transition: all 0.4s ease;
     }
     

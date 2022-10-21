@@ -1,5 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
+
+
+
+import BestSellersSlider from '../components/homepage/best-sellers';
 
 
 export default function Home() {
@@ -11,22 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
-        <p className="header">
-          Welcome to Sass Boilerplate!
-        </p>
-
-        <p className="sub-header">
-          Just add to this
-        </p>
-
-        <p className="text">
-          Keeping it simple
-        </p>
-
-
-
-      </main>
+        <div className='container'>
+          <BestSellersSlider/>
+        </div>
     </div>
   )
 }

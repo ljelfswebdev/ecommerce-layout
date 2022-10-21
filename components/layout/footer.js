@@ -80,8 +80,8 @@ const Footer = () => {
                     {/* column1 */}
                     <div className="accordion">
                     <input type="checkbox" id="first" />
-                    <label for="first" className="sub-header acc-label">Header 1</label>
-                    <div class="acc-content">
+                    <label htmlFor="first" className="sub-header acc-label">Header 1</label>
+                    <div className="acc-content">
                         <ul className="footerDesktop__links">
                             {header1.map((link, index) => {
                                 return (
@@ -97,7 +97,7 @@ const Footer = () => {
                     {/* column 2 */}
                     <div className="accordion">
                         <input type="checkbox" id="second" />
-                        <label for="second" className="sub-header acc-label">Header 2</label>
+                        <label htmlFor="second" className="sub-header acc-label">Header 2</label>
                         <div className="acc-content">
                             <ul className="footerDesktop__links">
                                 {header2.map((link, index) => {
@@ -113,7 +113,7 @@ const Footer = () => {
                      {/* column 3 */}
                      <div className="accordion">
                         <input type="checkbox" id="third" />
-                        <label for="third" className="sub-header acc-label">Header 3</label>
+                        <label htmlFor="third" className="sub-header acc-label">Header 3</label>
                         <div className="acc-content">
                             <ul className="footerDesktop__links">
                                 {header3.map((link, index) => {
@@ -129,7 +129,7 @@ const Footer = () => {
                      {/* column 4 */}
                      <div className="accordion">
                         <input type="checkbox" id="fourth" />
-                        <label for="fourth" className="sub-header acc-label">Header 4</label>
+                        <label htmlFor="fourth" className="sub-header acc-label">Header 4</label>
                         <div className="acc-content">
                             <ul className="footerDesktop__links">
                                 {header4.map((link, index) => {

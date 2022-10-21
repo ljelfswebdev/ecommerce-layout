@@ -6,6 +6,10 @@
 @import "components/navbar.scss";
 @import "components/footer.scss";
 
+@import "components/sliders/bestSellers.scss";
+
+
+
 body {
 margin: 0 !important;
 }
@@ -13,19 +17,21 @@ margin: 0 !important;
     margin: rem-calc(10)
 }
 .header{
-    color: $gold;
+    color: $light-blue;
     font-family: $primary;
     font-size: rem-calc(32);
+    font-weight: 600;
 }
 
 .sub-header {
-    color: $gold;
-    font-family: $secondary;
+    color: $light-blue;
+    font-family: $primary;
     font-size: rem-calc(20);
+    font-weight: 600;
 }
 
 .text {
-    color: $lightGreen;
+    color: $black;
     font-family: $secondary;
     font-size: rem-calc(16);
 }

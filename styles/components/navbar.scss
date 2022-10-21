@@ -6,7 +6,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	transition: top .75s ease-in;
-	background-color: $darkGreen;
+	background-color: $dark-blue;
 
 	.menu{
 		list-style: none;
@@ -25,14 +25,17 @@
 			transition: 1s all;
 			text-decoration: none;
 			font-size: rem-calc(20);
+			font-family: $primary;
+			font-weight: 400;
+			color: $light-blue;
 
 			&:link, &:visited{
-				color: $gold;
+				color: $light-blue;
 			}
 
 			&:focus, &:hover, &:active{
 				transform: scale(1.1) rotate(-2deg);
-				color: $gold;
+				color: $light-blue;
 			}
 		}
 	}
@@ -48,14 +51,14 @@
 		padding: 28px 20px;
 
 		.navicon{
-			background: $gold;
+			background: $black;
 			display: block;
 			height: 2px;
 			position: relative;
 			width: 1.625rem;
 
 			&:before, &:after{
-				background: $gold;
+				background: $black;
 				content: '';
 				display: block;
 				height: 100%;

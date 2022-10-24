@@ -28,6 +28,43 @@
         align-items: center;
       }
 
+      .swiper-pagination{
+        bottom: 0px !important;
+      }
+
+      .header{
+        display:flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        @media  (max-width: 400px) {
+            display: grid;
+            justify-content: center;
+            grid-gap: rem-calc(10);
+        }
+
+        a{
+            color:#000;
+            font-size: rem-calc(18);
+            font-family: $secondary;
+
+            @media  (max-width: 400px) {
+                text-align: center;
+                margin-bottom: rem-calc(10);
+            }
+        }
+
+        p{
+            color:#000;
+            font-size: rem-calc(24);
+            font-family: $secondary;
+
+            @media  (max-width: 400px) {
+                text-align: center;
+            }
+        }
+      }
+
       
     .card {
         border: 1px solid $light-blue;
@@ -38,6 +75,7 @@
         justify-content: center;
         height: rem-calc(400);
         position: relative;
+        width: 100%;
 
         &:hover {
             box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);

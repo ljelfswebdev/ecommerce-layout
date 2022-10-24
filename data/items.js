@@ -4,7 +4,8 @@ const watches = [
         name : 'Omega Seamaster Planet Ocean',
         color: '#C0C0C0',
         price: '4600',
-        image: 'omega'
+        image: 'omega',
+        isBestSeller: true,
     },
 
     {
@@ -12,7 +13,8 @@ const watches = [
         name: 'Breitling Endurance Pro',
         color: '#8A8AFF',
         price: '2650',
-        image: 'breitling'
+        image: 'breitling',
+        isBestSeller: true,
     },
 
     {
@@ -20,7 +22,8 @@ const watches = [
         name: 'Tudor Royal',
         color: '#C0C0C0',
         price: '1180',
-        image: 'tudor'
+        image: 'tudor',
+        isBestSeller: false,
     },
 
     {
@@ -28,7 +31,8 @@ const watches = [
         name: 'Gucci Dive',
         color: '#0000A3',
         price: '1300',
-        image: 'gucci'
+        image: 'gucci',
+        isBestSeller: true,
     },
 
     {
@@ -36,7 +40,17 @@ const watches = [
         name: 'Raymond Weil Freelancer',
         color: '#C0C0C0',
         price: '1495',
-        image: 'raymond'
+        image: 'raymond',
+        isBestSeller: true,
+    },
+
+    {
+        id: 6,
+        name: 'Casio Classic',
+        color: '#C0C0C0',
+        price: '1495',
+        image: 'casio',
+        isBestSeller: true,
     },
 ];
 

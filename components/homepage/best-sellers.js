@@ -17,6 +17,13 @@ const BestSellersSlider = () => {
 
     return (
         <div className="bestSellersSlider">
+
+          <div className="header">
+            <p>Watches</p>
+            <a href="/watches">
+              View All Watches
+            </a>
+          </div>
         <Swiper
         spaceBetween={25}
         slidesPerView={1} 
@@ -35,11 +42,12 @@ const BestSellersSlider = () => {
           }}
       >
 
-        {watches.map((w) => (
+        {
+        watches.filter( watches => watches.isBestSeller === true).map((w) => (
             <SwiperSlide key={w.id}>
                 <div className="card">
                     <div className="image">
-                       <img src={`/images/products/${w.image}.png`} alt={w.name}/> 
+                       <img src={`/images/products/watches/${w.image}.png`} alt={w.name}/> 
                     </div>
                     
                     <p>{w.name}</p>

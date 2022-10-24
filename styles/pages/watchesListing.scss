@@ -42,9 +42,9 @@
             display: grid;
             grid-template-columns: 1fr;
             justify-content: center;
-            height: rem-calc(400);
+            height: fit-content;
+            min-height: rem-calc(450);
             position: relative;
-            width: 80%;
     
             &:hover {
                 box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
@@ -90,6 +90,11 @@
                     width: rem-calc(25);
                     border-radius: 50px; 
                 }
+            }
+
+            .buttons{
+                display: flex;
+                justify-content: center;
             }
         
     }

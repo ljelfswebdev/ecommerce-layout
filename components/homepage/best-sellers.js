@@ -11,6 +11,8 @@ import "swiper/css/pagination";
 
 import React, { useRef, useState } from "react";
 
+import Link from "next/link.js";
+
 import watches from '../../data/items.js';
 
 const BestSellersSlider = () => {
@@ -56,6 +58,16 @@ const BestSellersSlider = () => {
                     </div>
                     
                     <p>£{w.price}.00</p>
+
+                    <div className="buttons">
+                      <Link href={`/watches/${w.id}`}>
+                       <button className="button button--light-blue">
+                         Buy Now
+                       </button>
+                      </Link>
+                    </div>
+
+                   
                 </div>
                 
             </SwiperSlide>

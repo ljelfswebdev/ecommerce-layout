@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import WatchesListingBanner from '../components/watchesListing/banner';
-import WatchesProductListingCard from '../components/watchesListing/card';
+import WatchesListingBanner from '../../components/watchesListing/banner';
+import WatchesProductListingCard from '../../components/watchesListing/card';
 
 class watchesListing extends Component {
     render() {

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Link from 'next/link';
+
 import watches from '../../data/items';
 
 class WatchesProductListingCard extends Component {
@@ -7,7 +9,7 @@ class WatchesProductListingCard extends Component {
         return (
             <>
             {watches.map((w) => (
-                <div className="watchesListing__card">
+                <div className="watchesListing__card" key={w.id}>
                 <div className="image">
                     <img src={`/images/products/watches/${w.image}.png`} alt={w.name}/> 
                 </div>
@@ -18,8 +20,16 @@ class WatchesProductListingCard extends Component {
                 </div>
                     
                 <p>£{w.price}.00</p>
+
+                <div className="buttons">
+                      <Link href={`/watches/${w.id}`}>
+                       <button className="button button--light-blue">
+                         Buy Now
+                       </button>
+                      </Link>
+                    </div>
             </div>
-            ))};
+            ))}
 
         </>
 
